@@ -109,7 +109,7 @@ p{
   padding: 2% 15% 10%;
 }
 .quienSoy-areas-container{
-padding-top: 15px;
+padding-top: 25px;
 }
 @media (max-width: 576px){
 .container-text{
@@ -135,6 +135,9 @@ padding-top: 0px;
   padding-top: 0%;
 }
 .fas{
+    color:#666;
+}
+.fab{
     color:#666;
 }
 .quienSoy-texto{
@@ -212,7 +215,10 @@ text-align: right;
 .text-web{
   text-align: left;
 }
-
+.habilidades-icon{
+font-size: 6rem;
+padding: 3% 0;
+}
 
 @media(max-width: 576px){
 .text-web{
@@ -228,12 +234,13 @@ text-align: right;
 
 /* pie de pagina */
 
+
   .igLogo{
     width: 20%;
     color:#aaa;
   }
 .copyright{
-padding-top: 5%;
+padding-top: 1%;
 }
 
 /* Fotos */
