@@ -1,0 +1,16 @@
+{
+  "name": "gonzalo-lobos",
+  "version": "1.0.0",
+  "description": "CV Gonzalo Lobos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gonzalo Lobos",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "lightbox2": "^2.11.3"
+  }
+}
