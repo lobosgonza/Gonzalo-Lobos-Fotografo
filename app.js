@@ -1,7 +1,8 @@
-const express = require("express")
+const express = require("express");
+const bodyParser = require("body-parser");
+const request = require("request");
 
-
-var app = express()
+const app = express()
 
 app.use(express.static("public"))
 
@@ -11,6 +12,10 @@ app.get("/", function (req, res){
 
 app.get("/trabajos", function(req,res){
   res.sendFile(__dirname + "/trabajos.html")
+})
+
+app.get("/Newsletter", function(req,res){
+  res.sendFile(__dirname + "/signup.html")
 })
 
 app.listen(process.env.PORT || 3000, function (req,res) {
