@@ -87,7 +87,7 @@ p{
   margin-bottom: 20px;
 }
 .fa-arrow-left{
-display: inline; 
+display: inline;
 }
 
 @media(max-width: 768px){
@@ -169,9 +169,7 @@ padding-top: 0px;
 .profile-img{
   padding-top: 0%;
 }
-.fas{
-    color:#666;
-}
+
 
 .quienSoy-texto{
 padding: 2% 15%;
@@ -256,6 +254,7 @@ text-align: right;
 .habilidades-icon{
 font-size: 6rem;
 padding: 3% 0;
+color: #212529;
 }
 
 @media(max-width: 576px){
