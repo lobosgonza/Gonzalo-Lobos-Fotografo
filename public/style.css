@@ -9,7 +9,7 @@ Body{
   }
 
   h2{
-    color:#aaa;
+    color:#999;
   }
 
   h3{
@@ -20,12 +20,11 @@ Body{
       color:#666;
         font-size: 1.6rem;
   }
-
   p{
 color:#888;
 font-family: 'Open Sans', sans-serif;
       line-height: 2.2;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
   }
 
   h1, h2, h3, h4{
@@ -100,26 +99,28 @@ display: inline;
   font-size: 1.1rem;
 }
 }
-
+.navbar-white{
+background-color: #fff
+}
 /* My Name */
 
 .name-box{
-  padding:10% 0 19%;
+  padding:30% 0 25%;
 }
 @media(max-width: 768px){
   .name-box{
-    padding: 40% 0 60%;
+    padding: 50% 0 60%;
   }
 }
 @media (max-width: 576px){
 .name-box{
-  padding: 50% 0 80%;
+  padding: 70% 0 80%;
 }
 }
 
 @media (max-width: 1336px) and (orientation: landscape){
   .name-box{
-    padding:20% 0 29%;
+    padding:20% 0 35%;
   }
 }
 @media (max-width: 823px) and (orientation: landscape){
@@ -270,30 +271,44 @@ color: #212529;
 /* contacto */
 
 /* pie de pagina */
+.igAnchor:hover {
+text-decoration: none;
+}
+.igAnchor:hover .igLogo {
+color: #ddd;
+    text-decoration: none;
+      cursor: pointer;
+}
 
+.igAnchor:hover .ig-button{
+  color: #ddd;
+  text-decoration: none;
+  cursor: pointer;
+}
 .igLogo{
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #888;
   padding-right: 1%;
 }
-.igLogo:hover{
-  color: #ccc;
-}
-
 .ig-button {
 color: #888;
-text-decoration: none;
 cursor: auto;
-font-size: 1.5rem;
-
+display: inline;
 }
 
-.ig-button:hover {
-  color: #ccc;
+/* .bck-to-top{
+  color: #888;
+  padding-right: 1%;
+} */
+.bck-to-top:hover {
   text-decoration: none;
-  cursor: pointer;
-  font-size: 1.5rem;
 }
+.bck-to-top-text:hover{
+  text-decoration: none;
+  color: #ddd;
+    cursor: pointer;
+}
+
 .copyright{
 padding-top: 1%;
 }
