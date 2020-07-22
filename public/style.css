@@ -163,7 +163,10 @@ padding-top: 0px;
   padding: 5%;
 }
 
-
+.volver-txt{
+  display: inline;
+  font-size: 1.5rem;
+}
 
 /* quienSoy */
 
@@ -245,17 +248,9 @@ margin-right: auto;
   padding: 0;
 }
 
-.text-adobe{
-text-align: right;
-}
-
-.text-web{
-  text-align: left;
-}
 .habilidades-icon{
-font-size: 6rem;
-padding: 3% 0;
-color: #212529;
+padding-bottom: 5%;
+width: 500px;
 }
 
 @media(max-width: 576px){
