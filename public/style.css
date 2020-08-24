@@ -1,85 +1,37 @@
-
 Body{
   text-align: center;
 }
 
-  h1{
+  h1,h3{
     color:#444;
-    font-size: 5.625em;
   }
 
   h2{
     color:#999;
   }
-
-  h3{
-    color:#444;
-    font-size: 2rem;
-  }
   h4{
       color:#666;
-        font-size: 1.6rem;
   }
-  p{
+  p,a{
 color:#888;
 font-family: 'Open Sans', sans-serif;
       line-height: 2.2;
-      font-size: 1.4rem;
   }
 
   h1, h2, h3, h4{
     font-family: 'Quicksand', sans-serif;
   }
 
-  @media (max-width: 576px){
-  h1{
-    font-size: 2.5rem;
-  }
-  h2{
 
-    font-size: 1.5rem;
-  }
-  h3{
 
-    font-size: 1.5rem;
-  }
-p{
-  font-size: 1.2rem
+/* fondos background bg */
+
+.bg-blue{
+  background-color: blue;
 }
-  }
-
-  @media (max-width: 576px){
-    h3{
-      font-size: 1.1rem
-    }
-  }
-
-  @media (max-width: 1024px) and (orientation: landscape){
-    h1{
-      font-size: 4rem;
-    }
-    h3{
-      font-size: 2rem;
-    }
-    p{
-      font-size: 1.5rem;
-      line-height: 1.2;
-    }
-  }
-
-  @media (max-width: 640px) and (orientation: landscape){
-    h1{
-      font-size: 2.5rem;
-    }
-    h3{
-      font-size: 1.2rem;
-    }
-    p{
-      font-size: 1rem;
-      line-height: 1.2;
-    }
-  }
-
+.bg-footer{
+  background-color: red;
+}
 
 /* navBar */
 .navbar{
@@ -89,49 +41,18 @@ p{
 display: inline;
 }
 
-@media(max-width: 768px){
-.navbar-brand{
-  font-size: 1.5rem;
-}
-}
-@media(max-width: 576px){
-.navbar-brand{
-  font-size: 1.1rem;
-}
-}
 .navbar-white{
 background-color: #fff
 }
-/* My Name */
+/* Title */
 
-.name-box{
-  padding:15% 0 25%;
+.title-container{
+  height: 100vh;
+  width: auto;
+  background-color: red;
 }
-@media(max-width: 768px){
-  .name-box{
-    padding: 50% 0 60%;
-  }
-}
-@media (max-width: 576px){
-.name-box{
-  padding: 70% 0 80%;
-}
-}
-
-@media (max-width: 1336px) and (orientation: landscape){
-  .name-box{
-    padding:20% 0 35%;
-  }
-}
-@media (max-width: 823px) and (orientation: landscape){
-  .name-box{
-    padding:5% 0 18%;
-  }
-}
-@media (max-width: 640px) and (orientation: landscape){
-  .name-box{
-    padding:5% 0 18%;
-  }
+.title-text{
+padding-top: 40vh;
 }
 /* Trabajos */
 .box-title{
@@ -158,14 +79,10 @@ padding-top: 0px;
 
 
 /* Heading Section */
-.section-heading{
-  font-size: 2.5rem;
-  padding: 5%;
-}
+
 
 .volver-txt{
   display: inline;
-  font-size: 1.5rem;
 }
 
 /* quienSoy */
@@ -187,20 +104,74 @@ padding: 2% 15%;
     padding: 2% 2%;
   }
 }
-@media (max-width: 576px){
-  .quienSoy-icon{
-    font-size: 5rem;
-    padding: 3%;
-  }
-  .profile-img{
-    width: 200px;
-  }
-}
+
 @media (max-width: 1024px) and (orientation: landscape){
   .profile-img{
     width: 250px;
   }
 }
+
+
+/* Quien soy Nav tab */
+
+
+
+
+  .nav {
+  border-bottom: 0;
+
+}
+
+  .nav>li>a {
+    padding: 8px 0;
+  font-size: 18px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  margin-right: 35px;
+}
+
+  .nav>li.active>a,
+  .nav>li.active>a:focus,
+  .nav>li.active>a:hover {
+  background: transparent;
+  border-bottom: 3px solid #29ca8e;
+}
+
+  .nav>li>a:focus,
+  .nav>li>a:hover {
+  background: transparent;
+  border-bottom: 3px solid #29ca8e;
+}
+
+  .tab-content {
+  margin-top: 50px;
+}
+
+.tab-pane-item {
+  margin: 10% 0;
+}
+
+
+
+a {
+  text-decoration: none !important;
+}
+
+a,
+input, button,
+.form-control {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #29ca8e;
+
+  outline: none;
+
+}
+
 /* Trabajos section */
 .trabajos-subtitle{
   padding-bottom: 10px;
@@ -268,7 +239,7 @@ width: 500px;
 
 /* contacto */
 
-/* pie de pagina */
+/* footer de pagina */
 .igAnchor:hover {
 text-decoration: none;
 }
