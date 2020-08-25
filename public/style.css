@@ -1,6 +1,6 @@
-Body{
-  text-align: center;
-}
+/* html {
+  scroll-behavior: smooth;
+} */
 
   h1,h3{
     color:#444;
@@ -12,7 +12,7 @@ Body{
   h4{
       color:#666;
   }
-  p,a{
+  p,a,li{
 color:#888;
 font-family: 'Open Sans', sans-serif;
       line-height: 2.2;
@@ -26,11 +26,11 @@ font-family: 'Open Sans', sans-serif;
 
 /* fondos background bg */
 
-.bg-blue{
-  background-color: blue;
+.bg-container-title{
+  background-color: #f1f1f1;
 }
 .bg-footer{
-  background-color: red;
+  background-color: #f1f1f1;
 }
 
 /* navBar */
@@ -46,10 +46,10 @@ background-color: #fff
 }
 /* Title */
 
-.title-container{
+.container-title{
   height: 100vh;
   width: auto;
-  background-color: red;
+  background-color: #fff;
 }
 .title-text{
 padding-top: 40vh;
@@ -62,21 +62,19 @@ padding-top: 40vh;
 
 /* Containers */
 
+.container{
+padding-top: 3%;
+padding-bottom: 3%;
+}
+
 .container-text{
   padding: 2% 15% 10%;
 }
-.quienSoy-areas-container{
-padding-top: 25px;
-}
-@media (max-width: 576px){
-.container-text{
-  padding: 10% 5% 4%;
-}
-.quienSoy-areas-container{
-padding-top: 0px;
-}
-}
 
+.section-container-title{
+  padding: 2% 0;
+  text-align: center;
+}
 
 /* Heading Section */
 
@@ -87,9 +85,7 @@ padding-top: 0px;
 
 /* quienSoy */
 
-.profile-img{
-  padding-top: 0%;
-}
+
 
 
 .quienSoy-texto{
@@ -99,17 +95,9 @@ padding: 2% 15%;
   font-size: 5rem;
   padding: 3%;
 }
-@media (max-width: 768px){
-  .quienSoy-texto{
-    padding: 2% 2%;
-  }
-}
 
-@media (max-width: 1024px) and (orientation: landscape){
-  .profile-img{
-    width: 250px;
-  }
-}
+
+
 
 
 /* Quien soy Nav tab */
@@ -119,6 +107,7 @@ padding: 2% 15%;
 
   .nav {
   border-bottom: 0;
+  display: inline-flex;
 
 }
 
@@ -136,20 +125,22 @@ padding: 2% 15%;
   .nav>li.active>a:hover {
   background: transparent;
   border-bottom: 3px solid #29ca8e;
+  color: #000;
 }
 
   .nav>li>a:focus,
   .nav>li>a:hover {
   background: transparent;
   border-bottom: 3px solid #29ca8e;
+    color: #000;
 }
 
   .tab-content {
-  margin-top: 50px;
+
 }
 
 .tab-pane-item {
-  margin: 10% 0;
+padding: 3% 0;
 }
 
 
@@ -166,8 +157,8 @@ input, button,
 }
 
 a:hover, a:active, a:focus {
-  color: #29ca8e;
-
+  /* color: #29ca8e; */
+  color: #000;
   outline: none;
 
 }
@@ -294,4 +285,75 @@ padding-top: 1%;
 .gallery img:hover{
   /* filter: grayscale(100%); */
 transform: scale(1.05);
+}
+
+
+
+/* Signup */
+
+
+.cuerpo {
+  height: 100%;
+}
+.cuerpo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.middle {
+  margin-bottom: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+
+}
+.bottom {
+
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
 }

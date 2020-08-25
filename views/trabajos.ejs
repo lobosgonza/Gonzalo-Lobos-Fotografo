@@ -1,42 +1,19 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <title>Mis Trabajos</title>
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-  <!-- Js B4 src -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-  <!-- FontAwsome -->
-  <script src="https://kit.fontawesome.com/4052b0de14.js" crossorigin="anonymous"></script>
+<%- include("partials/header"); -%>
 
 
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300&display=swap" rel="stylesheet">
-
-  <!-- LightBox css -->
-  <link href="dist/css/lightbox.min.css" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="style.css" rel="stylesheet">
-
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light ">
-    <a href="/" class="navbar-brand"><i class="fas fa-arrow-left"></i><h3 class="volver-txt">Volver</h3></a>
-  </nav>
-  <div class="box-title">
-    <h1>Mis trabajos</h1>
-  </div>
   <div class="container">
+    <div class="row text-center mt-5 mb-3 pt-5 pb-3">
+      <div class="col">
+
+
+    <h1>Mis trabajos</h1>
+    <p>Fotografías, Ilustraciones y Pagina Web desarrolladas por Gonzalo Lobos</p>
+
+  </div>
+  </div>
+
+
+
     <div class="row justify-content-start gallery">
 
       <div class="col-lg-3 col-md-6 col-sm-6 trabajos-padding">
@@ -75,14 +52,8 @@
     </div>
   </div>
 
-  <section id="pie" class="pie">
-    <p class="copyright">2020 | Fotografías, Ilustraciones y Pagina Web desarrolladas por Gonzalo Lobos©</p>
-  </section>
 
 
-</body>
 
-<!-- lightbox js -->
-<script src="dist/js/lightbox-plus-jquery.min.js"></script>
 
-</html>
+<%- include("partials/footer"); -%>

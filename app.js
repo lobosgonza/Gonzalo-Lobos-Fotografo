@@ -4,6 +4,8 @@ const request = require("request");
 const https = require ("https");
 const ejs = require('ejs');
 
+
+
 const app = express()
 
 app.set('view engine', 'ejs');
@@ -15,14 +17,14 @@ app.get("/", function (req, res){
 })
 
 app.get("/trabajos", function(req,res){
-  res.sendFile(__dirname + "/trabajos.html")
+  res.render("trabajos");
 })
 
-app.get("/Newsletter", function(req,res){
-  res.sendFile(__dirname + "/signup.html")
+app.get("/newsletter", function(req,res){
+res.render("signup");
 })
 
-app.post('/Newsletter', function (req, res){
+app.post('/newsletter', function (req, res){
 const nombre = req.body.nombre;
 const apellido = req.body.apellido;
 const email = req.body.email;
@@ -65,7 +67,7 @@ request.end();
 })
 
 app.post("/failure", function(req,res){
-  res.redirect( "/Newsletter" )
+  res.redirect( "/newsletter" )
 })
 
 

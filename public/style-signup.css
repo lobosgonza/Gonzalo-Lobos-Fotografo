@@ -1,9 +1,7 @@
-html,
-cuerpo {
+.cuerpo {
   height: 100%;
 }
-
-cuerpo {
+.cuerpo {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
