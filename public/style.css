@@ -124,6 +124,7 @@ padding: 2% 15%;
   .nav {
   border-bottom: 0;
   display: inline-flex;
+  margin: 4% auto;
 
 }
 
@@ -148,13 +149,25 @@ padding: 2% 15%;
   color: #000;
 }
 
-
   .nav>li>a:focus,
   .nav>li>a:hover {
   background: transparent;
   border-bottom: 3px solid #29ca8e;
     color: #000;
 }
+
+@media (max-width: 364px){
+
+  .nav>li>a{
+    padding: 2px 8px;
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+
+}
+
+
 
 
 .tab-pane-item {
@@ -180,6 +193,8 @@ a:hover, a:active, a:focus {
   outline: none;
 
 }
+
+
 
 /* Trabajos section */
 .trabajos-subtitle{
