@@ -1,6 +1,4 @@
-/* html {
-  scroll-behavior: smooth;
-} */
+
 
   h1,h3{
     color:#444;
@@ -22,7 +20,11 @@ font-family: 'Open Sans', sans-serif;
     font-family: 'Quicksand', sans-serif;
   }
 
-
+@media (max-width: 768px){
+  body{
+    text-align: center;
+  }
+}
 
 /* fondos background bg */
 
@@ -36,6 +38,8 @@ font-family: 'Open Sans', sans-serif;
 /* navBar */
 .navbar{
   margin-bottom: 20px;
+  transition: background-color 400ms , box-shadow 400ms;
+
 }
 .fa-arrow-left{
 display: inline;
@@ -44,6 +48,14 @@ display: inline;
 .navbar-white{
 background-color: #fff
 }
+
+.navbar.scrolled {
+  background-color: #f4f4f4 !important;
+  transition: background-color 400ms , box-shadow 400ms;
+  box-shadow: 0 0 8px #888888;
+}
+
+
 /* Title */
 
 .container-title{
@@ -62,13 +74,14 @@ padding-top: 40vh;
 
 /* Containers */
 
-.container{
-padding-top: 3%;
-padding-bottom: 3%;
-}
+
 
 .container-text{
   padding: 2% 15% 10%;
+}
+
+.section-container{
+  padding: 3% 0;
 }
 
 .section-container-title{
@@ -85,25 +98,22 @@ padding-bottom: 3%;
 
 /* quienSoy */
 
-
-
-
 .quienSoy-texto{
 padding: 2% 15%;
 }
-.quienSoy-icon{
-  font-size: 5rem;
-  padding: 3%;
+
+
+
+.profile-img{
+  width: 100%;
+  padding: 5%;
 }
 
-
-
-
+.icon-align{
+  text-align: center;
+}
 
 /* Quien soy Nav tab */
-
-
-
 
   .nav {
   border-bottom: 0;
@@ -117,7 +127,7 @@ padding: 2% 15%;
   border: 0;
   border-bottom: 3px solid transparent;
   border-radius: 0;
-  margin-right: 35px;
+  margin-right: 10px;
 }
 
   .nav>li.active>a,
@@ -176,29 +186,6 @@ a:hover, a:active, a:focus {
     padding: 5% 0 0 ;
   }
 
-@media (max-width: 768px){
-  .trabajo-img-each{
-    width: 100%;
-  }
-}
-@media (max-width: 1024px) and (orientation: landscape){
-  .trabajo-img-each{
-    width: 96%;
-  }
-}
-@media (max-width: 640px) and (orientation: landscape){
-  .trabajo-img-each{
-    width: 96%;
-  }
-}
-@media (max-width: 576px){
-.trabajo-img-each{
-width: 96%;
-}
-.col-sm-6{
-  width: 45%;
-}
-}
 
 /* Habilidades */
 .inner-habilidades-container{
@@ -211,21 +198,10 @@ margin-right: auto;
 }
 
 .habilidades-icon{
-padding-bottom: 5%;
-width: 500px;
+padding: 5%;
+width: 100%;
 }
 
-@media(max-width: 576px){
-.text-web{
-  text-align: center;
-}
-.text-adobe{
-  text-align: center;
-}
-.habilidades-icon{
-  width: 300px;
-}
-}
 
 
 /* contacto */
@@ -256,10 +232,6 @@ cursor: auto;
 display: inline;
 }
 
-/* .bck-to-top{
-  color: #888;
-  padding-right: 1%;
-} */
 .bck-to-top:hover {
   text-decoration: none;
 }
@@ -292,10 +264,9 @@ transform: scale(1.05);
 /* Signup */
 
 
+
 .cuerpo {
   height: 100%;
-}
-.cuerpo {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -310,9 +281,7 @@ transform: scale(1.05);
   padding: 15px;
   margin: auto;
 }
-.form-signin .checkbox {
-  font-weight: 400;
-}
+
 .form-signin .form-control {
   position: relative;
   box-sizing: border-box;
@@ -356,4 +325,12 @@ transform: scale(1.05);
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+}
+
+.btn-primary{
+  background-color:#29ca8e ;
+  border-style: none;
+}
+.form-control:focus{
+  border-color: #29ca8e;
 }
