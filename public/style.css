@@ -1,4 +1,6 @@
+body{
 
+}
 
   h1,h3{
     color:#444;
@@ -31,12 +33,11 @@ li{
 
 /* fondos background bg */
 
-.bg-container-title{
+.bg-container-title, .bg-footer {
   background-color: #f1f1f1;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
-.bg-footer{
-  background-color: #f1f1f1;
-}
+
 
 /* navBar */
 .navbar{
@@ -54,6 +55,7 @@ background-color: #fff
 
 .navbar.scrolled {
   background-color: #f4f4f4 !important;
+      background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   transition: background-color 400ms , box-shadow 400ms;
   box-shadow: 0 0 8px #888888;
 }
@@ -177,7 +179,7 @@ padding: 3% 0;
 
 
 a {
-  text-decoration: none !important;
+  text-decoration: none ;
 }
 
 a,
@@ -190,11 +192,15 @@ input, button,
 a:hover, a:active, a:focus {
   /* color: #29ca8e; */
   color: #000;
-  outline: none;
+  text-decoration: underline;
+ 
 
 }
 
+.nav-link:hover, nav-link:focus{
+text-decoration: underline;
 
+}
 
 /* Trabajos section */
 .trabajos-subtitle{
